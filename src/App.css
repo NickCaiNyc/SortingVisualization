@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body{
+    background-color: #333333;
+    
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sorting-container{
+    text-align: center;
+    margin:100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* display flex makes it so that it  */
+.bars {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    display:flex;
+    justify-content: center;
+    
+}
+.bar {
+    width: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:0px 1px;
+    background-color: #FF4136 ;
+    border-radius: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.compare{
+    width: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:0px 1px;
+    background-color: pink;
+    border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.swap{
+    width: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:0px 1px;
+    background-color: #0074D9;
+    border-radius: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pivot{
+    width: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:0px 1px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.done{
+    width: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin:0px 1px;
+    background-color: lavender;
+}
+.buttons {
+    background-color: #1C1C1C;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+    background-color: #FF4136;
+    cursor: pointer;
 }
+.button-container{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    background-color: #1C1C1C;
+}
+
+.nav-container{
+    width:100%;
+    color:gray;
+    position: fixed;
+
+    top:0;
+    background-color: #1C1C1C;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+
+}
+input[type="range"] {
+    padding:0;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+  }
